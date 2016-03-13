@@ -10,9 +10,13 @@ TARGET = core
 TEMPLATE = lib
 CONFIG += staticlib
 
-SOURCES += core.cpp
+SOURCES += \
+    cell.cpp \
+    field.cpp
 
-HEADERS += core.h
+HEADERS += \
+    cell.h \
+    field.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
