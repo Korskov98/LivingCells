@@ -1,36 +1,119 @@
 \hypertarget{classCell}{\section{Класс Cell}
 \label{classCell}\index{Cell@{Cell}}
 }
+
+
+Класс Клетка  
+
+
+
+
+{\ttfamily \#include $<$cell.\+h$>$}
+
 \subsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classCell_ac0f95844f9717e8eb46bda2940e37556}{{\bfseries Cell} (const int a, const int b, const bool st)}\label{classCell_ac0f95844f9717e8eb46bda2940e37556}
+\hypertarget{classCell_a394510643e8664cf12b5efaf5cb99f71}{\hyperlink{classCell_a394510643e8664cf12b5efaf5cb99f71}{Cell} ()}\label{classCell_a394510643e8664cf12b5efaf5cb99f71}
 
-\item 
-\hypertarget{classCell_a00989b383714d8f6d051677b96a3adcb}{int {\bfseries get\+\_\+x} ()}\label{classCell_a00989b383714d8f6d051677b96a3adcb}
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\hyperlink{classCell_ac0f95844f9717e8eb46bda2940e37556}{Cell} (const int a, const int b, const bool st)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+int \hyperlink{classCell_a00989b383714d8f6d051677b96a3adcb}{get\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Получить координату по оси x. \end{DoxyCompactList}\item 
+int \hyperlink{classCell_a957598cfc79e75ae651126173425d3fc}{get\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Получить координату по оси y. \end{DoxyCompactList}\item 
+bool \hyperlink{classCell_a5e113f816cd4750eccd1846af81845ac}{get\+\_\+status} ()
+\begin{DoxyCompactList}\small\item\em Получить состояние клетки \end{DoxyCompactList}\item 
+\hypertarget{classCell_a6f1ad5d04d79f0d7e0b3c8587dcb6c4b}{void \hyperlink{classCell_a6f1ad5d04d79f0d7e0b3c8587dcb6c4b}{set\+\_\+x} (const int a)}\label{classCell_a6f1ad5d04d79f0d7e0b3c8587dcb6c4b}
 
-\item 
-\hypertarget{classCell_a957598cfc79e75ae651126173425d3fc}{int {\bfseries get\+\_\+y} ()}\label{classCell_a957598cfc79e75ae651126173425d3fc}
+\begin{DoxyCompactList}\small\item\em Установить значение поля x, равное координате по оси x. \end{DoxyCompactList}\item 
+\hypertarget{classCell_a24fb665d79a98537dbae0764aae6cdc2}{void \hyperlink{classCell_a24fb665d79a98537dbae0764aae6cdc2}{set\+\_\+y} (const int b)}\label{classCell_a24fb665d79a98537dbae0764aae6cdc2}
 
-\item 
-\hypertarget{classCell_a5e113f816cd4750eccd1846af81845ac}{bool {\bfseries get\+\_\+status} ()}\label{classCell_a5e113f816cd4750eccd1846af81845ac}
+\begin{DoxyCompactList}\small\item\em Установить значение поля y, равное координате по оси y. \end{DoxyCompactList}\item 
+\hypertarget{classCell_aae843541fe3b463ed77d5530e9cab752}{void \hyperlink{classCell_aae843541fe3b463ed77d5530e9cab752}{set\+\_\+status} (const bool st)}\label{classCell_aae843541fe3b463ed77d5530e9cab752}
 
-\item 
-\hypertarget{classCell_a6f1ad5d04d79f0d7e0b3c8587dcb6c4b}{void {\bfseries set\+\_\+x} (const int a)}\label{classCell_a6f1ad5d04d79f0d7e0b3c8587dcb6c4b}
+\begin{DoxyCompactList}\small\item\em Установить значение поля status, равное состоянию клетки \end{DoxyCompactList}\item 
+\hypertarget{classCell_ac45949aec18ee3e3a281104e8219242b}{int \hyperlink{classCell_ac45949aec18ee3e3a281104e8219242b}{search\+\_\+living} ()}\label{classCell_ac45949aec18ee3e3a281104e8219242b}
 
-\item 
-\hypertarget{classCell_a24fb665d79a98537dbae0764aae6cdc2}{void {\bfseries set\+\_\+y} (const int b)}\label{classCell_a24fb665d79a98537dbae0764aae6cdc2}
+\begin{DoxyCompactList}\small\item\em Подсчёт колличества соседних живых клеток \end{DoxyCompactList}\item 
+\hypertarget{classCell_a6b7ced893f37cc3ea997d175b83d0a08}{int \hyperlink{classCell_a6b7ced893f37cc3ea997d175b83d0a08}{search\+\_\+dead} ()}\label{classCell_a6b7ced893f37cc3ea997d175b83d0a08}
 
-\item 
-\hypertarget{classCell_aae843541fe3b463ed77d5530e9cab752}{void {\bfseries set\+\_\+status} (const bool st)}\label{classCell_aae843541fe3b463ed77d5530e9cab752}
+\begin{DoxyCompactList}\small\item\em Подсчёт колличества соседних живых клеток \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{classCell_ac45949aec18ee3e3a281104e8219242b}{int {\bfseries search\+\_\+living} ()}\label{classCell_ac45949aec18ee3e3a281104e8219242b}
 
-\item 
-\hypertarget{classCell_a6b7ced893f37cc3ea997d175b83d0a08}{int {\bfseries search\+\_\+dead} ()}\label{classCell_a6b7ced893f37cc3ea997d175b83d0a08}
+\subsection{Подробное описание}
+Класс Клетка 
 
-\end{DoxyCompactItemize}
+Этот класс моделирует объект клетка из которых будет состоять поле. 
+
+\subsection{Конструктор(ы)}
+\hypertarget{classCell_ac0f95844f9717e8eb46bda2940e37556}{\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\subsubsection[{Cell}]{\setlength{\rightskip}{0pt plus 5cm}Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{const int}]{a, }
+\item[{const int}]{b, }
+\item[{const bool}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCell_ac0f95844f9717e8eb46bda2940e37556}
+
+
+Конструктор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & координата по оси x \\
+\hline
+{\em b} & координата по оси y \\
+\hline
+{\em st} & состояние клетки \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\hypertarget{classCell_a5e113f816cd4750eccd1846af81845ac}{\index{Cell@{Cell}!get\+\_\+status@{get\+\_\+status}}
+\index{get\+\_\+status@{get\+\_\+status}!Cell@{Cell}}
+\subsubsection[{get\+\_\+status}]{\setlength{\rightskip}{0pt plus 5cm}bool Cell\+::get\+\_\+status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCell_a5e113f816cd4750eccd1846af81845ac}
+
+
+Получить состояние клетки 
+
+\begin{DoxyReturn}{Возвращает}
+состояние клетки 
+\end{DoxyReturn}
+\hypertarget{classCell_a00989b383714d8f6d051677b96a3adcb}{\index{Cell@{Cell}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!Cell@{Cell}}
+\subsubsection[{get\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}int Cell\+::get\+\_\+x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCell_a00989b383714d8f6d051677b96a3adcb}
+
+
+Получить координату по оси x. 
+
+\begin{DoxyReturn}{Возвращает}
+координата по оси x 
+\end{DoxyReturn}
+\hypertarget{classCell_a957598cfc79e75ae651126173425d3fc}{\index{Cell@{Cell}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!Cell@{Cell}}
+\subsubsection[{get\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}int Cell\+::get\+\_\+y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCell_a957598cfc79e75ae651126173425d3fc}
+
+
+Получить координату по оси y. 
+
+\begin{DoxyReturn}{Возвращает}
+координата по оси y 
+\end{DoxyReturn}
 
 
 Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}

@@ -1,27 +1,94 @@
 \hypertarget{classField}{\section{Класс Field}
 \label{classField}\index{Field@{Field}}
 }
+
+
+Класс Поле  
+
+
+
+
+{\ttfamily \#include $<$field.\+h$>$}
+
 \subsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classField_aa667d9f9aa147e2e01d67622b20f9b8a}{{\bfseries Field} (const int a, const int b)}\label{classField_aa667d9f9aa147e2e01d67622b20f9b8a}
+\hypertarget{classField_a3e804c92273d9159f413f227b535c672}{\hyperlink{classField_a3e804c92273d9159f413f227b535c672}{Field} ()}\label{classField_a3e804c92273d9159f413f227b535c672}
 
-\item 
-\hypertarget{classField_a87883594a355f7f8d5855a75a9c244ba}{int {\bfseries get\+\_\+x} ()}\label{classField_a87883594a355f7f8d5855a75a9c244ba}
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\hyperlink{classField_aa667d9f9aa147e2e01d67622b20f9b8a}{Field} (const int a, const int b)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+int \hyperlink{classField_a87883594a355f7f8d5855a75a9c244ba}{get\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Получить размер поля по оси x. \end{DoxyCompactList}\item 
+int \hyperlink{classField_a88d72b613ec5a84ed771b30c9332a2ee}{get\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Получить размер поля по оси y. \end{DoxyCompactList}\item 
+\hypertarget{classField_aabb859d9fe4221518a4e46a6a53e0ce3}{void \hyperlink{classField_aabb859d9fe4221518a4e46a6a53e0ce3}{set\+\_\+x} (const int a)}\label{classField_aabb859d9fe4221518a4e46a6a53e0ce3}
 
-\item 
-\hypertarget{classField_a88d72b613ec5a84ed771b30c9332a2ee}{int {\bfseries get\+\_\+y} ()}\label{classField_a88d72b613ec5a84ed771b30c9332a2ee}
+\begin{DoxyCompactList}\small\item\em Установить значение поля x, равное размеру поля по оси x. \end{DoxyCompactList}\item 
+\hypertarget{classField_a44b4baffd21a4e55b4e13456068f1482}{void \hyperlink{classField_a44b4baffd21a4e55b4e13456068f1482}{set\+\_\+y} (const int b)}\label{classField_a44b4baffd21a4e55b4e13456068f1482}
 
-\item 
-\hypertarget{classField_aabb859d9fe4221518a4e46a6a53e0ce3}{void {\bfseries set\+\_\+x} (const int a)}\label{classField_aabb859d9fe4221518a4e46a6a53e0ce3}
+\begin{DoxyCompactList}\small\item\em Установить значение поля y, равное размеру поля по оси y. \end{DoxyCompactList}\item 
+\hypertarget{classField_ae57a51289d5e0d36f273bfa282dd83d4}{void \hyperlink{classField_ae57a51289d5e0d36f273bfa282dd83d4}{change\+\_\+field} ()}\label{classField_ae57a51289d5e0d36f273bfa282dd83d4}
 
-\item 
-\hypertarget{classField_a44b4baffd21a4e55b4e13456068f1482}{void {\bfseries set\+\_\+y} (const int b)}\label{classField_a44b4baffd21a4e55b4e13456068f1482}
+\begin{DoxyCompactList}\small\item\em Запускает механизм смены поколения и изменения клеток \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{classField_ae57a51289d5e0d36f273bfa282dd83d4}{void {\bfseries change\+\_\+field} ()}\label{classField_ae57a51289d5e0d36f273bfa282dd83d4}
 
-\end{DoxyCompactItemize}
+\subsection{Подробное описание}
+Класс Поле 
+
+Этот класс моделирует объект поле на котором располагаются клетки. 
+
+\subsection{Конструктор(ы)}
+\hypertarget{classField_aa667d9f9aa147e2e01d67622b20f9b8a}{\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\subsubsection[{Field}]{\setlength{\rightskip}{0pt plus 5cm}Field\+::\+Field (
+\begin{DoxyParamCaption}
+\item[{const int}]{a, }
+\item[{const int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classField_aa667d9f9aa147e2e01d67622b20f9b8a}
+
+
+Конструктор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & размер поля по оси x \\
+\hline
+{\em b} & размер поля по оси y \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\hypertarget{classField_a87883594a355f7f8d5855a75a9c244ba}{\index{Field@{Field}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!Field@{Field}}
+\subsubsection[{get\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}int Field\+::get\+\_\+x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classField_a87883594a355f7f8d5855a75a9c244ba}
+
+
+Получить размер поля по оси x. 
+
+\begin{DoxyReturn}{Возвращает}
+размер поля по оси x 
+\end{DoxyReturn}
+\hypertarget{classField_a88d72b613ec5a84ed771b30c9332a2ee}{\index{Field@{Field}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!Field@{Field}}
+\subsubsection[{get\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}int Field\+::get\+\_\+y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classField_a88d72b613ec5a84ed771b30c9332a2ee}
+
+
+Получить размер поля по оси y. 
+
+\begin{DoxyReturn}{Возвращает}
+размер поля по оси y 
+\end{DoxyReturn}
 
 
 Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}

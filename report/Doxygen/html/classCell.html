@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,37 +87,184 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">Класс Cell</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Класс Клетка  
+ <a href="classCell.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cell_8h_source.html">cell.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:ac0f95844f9717e8eb46bda2940e37556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0f95844f9717e8eb46bda2940e37556"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Cell</b> (const int a, const int b, const bool st)</td></tr>
+<tr class="memitem:a394510643e8664cf12b5efaf5cb99f71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a394510643e8664cf12b5efaf5cb99f71"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a> ()</td></tr>
+<tr class="memdesc:a394510643e8664cf12b5efaf5cb99f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор <br /></td></tr>
+<tr class="separator:a394510643e8664cf12b5efaf5cb99f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f95844f9717e8eb46bda2940e37556"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#ac0f95844f9717e8eb46bda2940e37556">Cell</a> (const int a, const int b, const bool st)</td></tr>
+<tr class="memdesc:ac0f95844f9717e8eb46bda2940e37556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#ac0f95844f9717e8eb46bda2940e37556">Подробнее...</a><br /></td></tr>
 <tr class="separator:ac0f95844f9717e8eb46bda2940e37556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00989b383714d8f6d051677b96a3adcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00989b383714d8f6d051677b96a3adcb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_x</b> ()</td></tr>
+<tr class="memitem:a00989b383714d8f6d051677b96a3adcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a00989b383714d8f6d051677b96a3adcb">get_x</a> ()</td></tr>
+<tr class="memdesc:a00989b383714d8f6d051677b96a3adcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить координату по оси x.  <a href="#a00989b383714d8f6d051677b96a3adcb">Подробнее...</a><br /></td></tr>
 <tr class="separator:a00989b383714d8f6d051677b96a3adcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a957598cfc79e75ae651126173425d3fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a957598cfc79e75ae651126173425d3fc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_y</b> ()</td></tr>
+<tr class="memitem:a957598cfc79e75ae651126173425d3fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a957598cfc79e75ae651126173425d3fc">get_y</a> ()</td></tr>
+<tr class="memdesc:a957598cfc79e75ae651126173425d3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить координату по оси y.  <a href="#a957598cfc79e75ae651126173425d3fc">Подробнее...</a><br /></td></tr>
 <tr class="separator:a957598cfc79e75ae651126173425d3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e113f816cd4750eccd1846af81845ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e113f816cd4750eccd1846af81845ac"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> ()</td></tr>
+<tr class="memitem:a5e113f816cd4750eccd1846af81845ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a5e113f816cd4750eccd1846af81845ac">get_status</a> ()</td></tr>
+<tr class="memdesc:a5e113f816cd4750eccd1846af81845ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить состояние клетки  <a href="#a5e113f816cd4750eccd1846af81845ac">Подробнее...</a><br /></td></tr>
 <tr class="separator:a5e113f816cd4750eccd1846af81845ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f1ad5d04d79f0d7e0b3c8587dcb6c4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f1ad5d04d79f0d7e0b3c8587dcb6c4b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_x</b> (const int a)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a6f1ad5d04d79f0d7e0b3c8587dcb6c4b">set_x</a> (const int a)</td></tr>
+<tr class="memdesc:a6f1ad5d04d79f0d7e0b3c8587dcb6c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение поля x, равное координате по оси x. <br /></td></tr>
 <tr class="separator:a6f1ad5d04d79f0d7e0b3c8587dcb6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fb665d79a98537dbae0764aae6cdc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24fb665d79a98537dbae0764aae6cdc2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_y</b> (const int b)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a24fb665d79a98537dbae0764aae6cdc2">set_y</a> (const int b)</td></tr>
+<tr class="memdesc:a24fb665d79a98537dbae0764aae6cdc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение поля y, равное координате по оси y. <br /></td></tr>
 <tr class="separator:a24fb665d79a98537dbae0764aae6cdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae843541fe3b463ed77d5530e9cab752"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae843541fe3b463ed77d5530e9cab752"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_status</b> (const bool st)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#aae843541fe3b463ed77d5530e9cab752">set_status</a> (const bool st)</td></tr>
+<tr class="memdesc:aae843541fe3b463ed77d5530e9cab752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение поля status, равное состоянию клетки <br /></td></tr>
 <tr class="separator:aae843541fe3b463ed77d5530e9cab752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45949aec18ee3e3a281104e8219242b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac45949aec18ee3e3a281104e8219242b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>search_living</b> ()</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#ac45949aec18ee3e3a281104e8219242b">search_living</a> ()</td></tr>
+<tr class="memdesc:ac45949aec18ee3e3a281104e8219242b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подсчёт колличества соседних живых клеток <br /></td></tr>
 <tr class="separator:ac45949aec18ee3e3a281104e8219242b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7ced893f37cc3ea997d175b83d0a08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b7ced893f37cc3ea997d175b83d0a08"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>search_dead</b> ()</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a6b7ced893f37cc3ea997d175b83d0a08">search_dead</a> ()</td></tr>
+<tr class="memdesc:a6b7ced893f37cc3ea997d175b83d0a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подсчёт колличества соседних живых клеток <br /></td></tr>
 <tr class="separator:a6b7ced893f37cc3ea997d175b83d0a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс Клетка </p>
+<p>Этот класс моделирует объект клетка из которых будет состоять поле. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ac0f95844f9717e8eb46bda2940e37556"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cell::Cell </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>st</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>координата по оси x </td></tr>
+    <tr><td class="paramname">b</td><td>координата по оси y </td></tr>
+    <tr><td class="paramname">st</td><td>состояние клетки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a5e113f816cd4750eccd1846af81845ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cell::get_status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить состояние клетки </p>
+<dl class="section return"><dt>Возвращает</dt><dd>состояние клетки </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a00989b383714d8f6d051677b96a3adcb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cell::get_x </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить координату по оси x. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>координата по оси x </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a957598cfc79e75ae651126173425d3fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cell::get_y </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить координату по оси y. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>координата по оси y </dd></dl>
+
+</div>
+</div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>/home/user/LivingCells/sources/livingcells/core/<a class="el" href="cell_8h_source.html">cell.h</a></li>
 <li>/home/user/LivingCells/sources/livingcells/core/cell.cpp</li>
@@ -124,7 +272,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>search_dead</b> ()</td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по My Project. Последние изменения: Пн 14 Мар 2016 23:56:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по My Project. Последние изменения: Ср 16 Мар 2016 00:37:25. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,20 +87,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 
 <p>Полный список членов класса <a class="el" href="classCell.html">Cell</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Cell</b>() (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Cell</b>(const int a, const int b, const bool st) (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_status</b>() (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_x</b>() (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_y</b>() (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>search_dead</b>() (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>search_living</b>() (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_status</b>(const bool st) (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_x</b>(const int a) (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_y</b>(const int b) (определено в <a class="el" href="classCell.html">Cell</a>)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>()</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCell.html#ac0f95844f9717e8eb46bda2940e37556">Cell</a>(const int a, const int b, const bool st)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCell.html#a5e113f816cd4750eccd1846af81845ac">get_status</a>()</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCell.html#a00989b383714d8f6d051677b96a3adcb">get_x</a>()</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCell.html#a957598cfc79e75ae651126173425d3fc">get_y</a>()</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCell.html#a6b7ced893f37cc3ea997d175b83d0a08">search_dead</a>()</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCell.html#ac45949aec18ee3e3a281104e8219242b">search_living</a>()</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCell.html#aae843541fe3b463ed77d5530e9cab752">set_status</a>(const bool st)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCell.html#a6f1ad5d04d79f0d7e0b3c8587dcb6c4b">set_x</a>(const int a)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCell.html#a24fb665d79a98537dbae0764aae6cdc2">set_y</a>(const int b)</td><td class="entry"><a class="el" href="classCell.html">Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по My Project. Последние изменения: Пн 14 Мар 2016 23:56:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по My Project. Последние изменения: Ср 16 Мар 2016 00:37:25. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
