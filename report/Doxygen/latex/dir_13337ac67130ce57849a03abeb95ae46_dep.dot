@@ -1,9 +1,0 @@
-digraph "/home/user/LivingCells/sources/livingcells/core" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_ab3173a9ba0198b4de5645d9dcf11260 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="livingcells" fontname="Helvetica", fontsize="10", URL="dir_ab3173a9ba0198b4de5645d9dcf11260.html"]
-  dir_13337ac67130ce57849a03abeb95ae46 [shape=box, label="core", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_13337ac67130ce57849a03abeb95ae46.html"];
-  }
-}
