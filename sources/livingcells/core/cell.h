@@ -1,5 +1,8 @@
 #ifndef CELL_H
 #define CELL_H
+#include <vector>
+
+using namespace std;
 
 /**
   @brief Класс Клетка
@@ -12,15 +15,11 @@ class Cell
 public:
     /**
      * @brief Конструктор
-     */
-    Cell(): x(0), y(0), status(false) {}
-    /**
-     * @brief Конструктор
      * @param a координата по оси x
      * @param b координата по оси y
      * @param st состояние клетки
      */
-    Cell(const int a, const int b, const bool st): x(a), y(b), status(st) {}
+    Cell(const int a = 0, const int b = 0, const int st = false): x(a), y(b), status(st) {}
     /**
      * @brief Получить координату по оси x
      * @return координата по оси x
@@ -35,31 +34,31 @@ public:
      * @brief Получить состояние клетки
      * @return состояние клетки
      */
-    bool get_status() {return status;}
+    int get_status() {return status;}
     /**
      * @brief Установить значение поля x, равное координате по оси x
      */
-    void set_x(const int a) {this->x = a;}
+    void set_x(const int a) {x = a;}
     /**
      * @brief Установить значение поля y, равное координате по оси y
      */
-    void set_y(const int b) {this->y = b;}
+    void set_y(const int b) {y = b;}
     /**
      * @brief Установить значение поля status, равное состоянию клетки
      */
-    void set_status(const bool st) {this->status = st;}
+    void set_status(const int st) {status = st;}
     /**
      * @brief Подсчёт колличества соседних живых клеток
      */
-    int search_living();
+    int search_living(vector<vector<Cell> > c);
     /**
      * @brief Подсчёт колличества соседних живых клеток
      */
-    int search_dead();
+    int search_dead(vector<vector<Cell> > c);
 private:
     int x;
     int y;
-    bool status;
+    int status;
 };
 
 #endif // CELL_H

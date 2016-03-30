@@ -1,7 +1,7 @@
 #ifndef FIELD_H
 #define FIELD_H
-#include <vector>
 #include "cell.h"
+#include <vector>
 
 using namespace std;
 
@@ -16,14 +16,15 @@ class Field
 public:
     /**
      * @brief Конструктор
-     */
-    Field(): x(0), y(0) {}
-    /**
-     * @brief Конструктор
      * @param a размер поля по оси x
      * @param b размер поля по оси y
      */
-    Field(const int a, const int b): x(a), y(b) {}
+    Field(const int a = 0, const int b = 0): x(a), y(b) {
+        cells.resize(x);
+        for (int i = 0; i < x; ++i){
+            cells[i].resize(y);
+        }
+    }
     /**
      * @brief Получить размер поля по оси x
      * @return размер поля по оси x
@@ -37,14 +38,16 @@ public:
     /**
      * @brief Установить значение поля x, равное размеру поля по оси x
      */
-    void set_x(const int a) {this->x = a;}
+    Cell get_cell(const int x_cell, const int y_cell) {return cells[x_cell][y_cell];}
+    void set_x(const int a) {x = a;}
     /**
      * @brief Установить значение поля y, равное размеру поля по оси y
      */
-    void set_y(const int b) {this->y = b;}
+    void set_y(const int b) {y = b;}
     /**
      * @brief Запускает механизм смены поколения и изменения клеток
      */
+    void set_cell(const int x_cell, const int y_cell, const int status);
     void change_field();
 private:
     int x;

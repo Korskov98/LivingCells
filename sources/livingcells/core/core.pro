@@ -12,11 +12,13 @@ CONFIG += staticlib
 
 SOURCES += \
     cell.cpp \
-    field.cpp
+    field.cpp \
+    api.cpp
 
 HEADERS += \
     cell.h \
-    field.h
+    field.h \
+    api.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
