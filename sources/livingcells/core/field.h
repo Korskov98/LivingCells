@@ -39,11 +39,11 @@ public:
      * @brief Установить значение поля x, равное размеру поля по оси x
      */
     Cell get_cell(const int x_cell, const int y_cell) {return cells[x_cell][y_cell];}
-    void set_x(const int a) {x = a;}
+    void set_x(const int a);
     /**
      * @brief Установить значение поля y, равное размеру поля по оси y
      */
-    void set_y(const int b) {y = b;}
+    void set_y(const int b);
     /**
      * @brief Запускает механизм смены поколения и изменения клеток
      */

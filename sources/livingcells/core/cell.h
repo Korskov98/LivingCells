@@ -19,7 +19,7 @@ public:
      * @param b координата по оси y
      * @param st состояние клетки
      */
-    Cell(const int a = 0, const int b = 0, const int st = false): x(a), y(b), status(st) {}
+    Cell(const int a = 0, const int b = 0, const bool st = false): x(a), y(b), status(st) {}
     /**
      * @brief Получить координату по оси x
      * @return координата по оси x
@@ -34,7 +34,7 @@ public:
      * @brief Получить состояние клетки
      * @return состояние клетки
      */
-    int get_status() {return status;}
+    bool get_status() {return status;}
     /**
      * @brief Установить значение поля x, равное координате по оси x
      */
@@ -46,19 +46,16 @@ public:
     /**
      * @brief Установить значение поля status, равное состоянию клетки
      */
-    void set_status(const int st) {status = st;}
+    void set_status(const bool st) {status = st;}
     /**
      * @brief Подсчёт колличества соседних живых клеток
      */
     int search_living(vector<vector<Cell> > c);
-    /**
-     * @brief Подсчёт колличества соседних живых клеток
-     */
-    int search_dead(vector<vector<Cell> > c);
+    int check(Cell);
 private:
     int x;
     int y;
-    int status;
+    bool status;
 };
 
 #endif // CELL_H

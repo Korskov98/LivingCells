@@ -12,6 +12,7 @@ public:
 
 private Q_SLOTS:
     void test_initialize_field();
+    void test_change_field();
 };
 
 TestTest::TestTest()
@@ -20,7 +21,7 @@ TestTest::TestTest()
 
 void TestTest::test_initialize_field()
 {
-    Field f(5, 5);
+    Field f(5,5);
     Api model;
     bool flag = true;
     model.initialize_field(f);
@@ -33,6 +34,38 @@ void TestTest::test_initialize_field()
         }
     }
     QCOMPARE(flag,true);
+}
+
+void TestTest::test_change_field(){
+    Field f(3,3);
+    f.set_cell(0,0,1);
+    f.set_cell(0,1,1);
+    f.set_cell(0,2,1);
+    f.set_cell(1,0,1);
+    f.set_cell(1,1,0);
+    f.set_cell(1,2,1);
+    f.set_cell(2,0,0);
+    f.set_cell(2,1,1);
+    f.set_cell(2,2,1);
+    f.change_field();
+    Cell c = f.get_cell(0,0);
+    QCOMPARE(c.get_status(),true);
+    c = f.get_cell(0,1);
+    QCOMPARE(c.get_status(),false);
+    c = f.get_cell(0,2);
+    QCOMPARE(c.get_status(),true);
+    c = f.get_cell(1,0);
+    QCOMPARE(c.get_status(),true);
+    c = f.get_cell(1,1);
+    QCOMPARE(c.get_status(),false);
+    c = f.get_cell(1,2);
+    QCOMPARE(c.get_status(),false);
+    c = f.get_cell(2,0);
+    QCOMPARE(c.get_status(),false);
+    c = f.get_cell(2,1);
+    QCOMPARE(c.get_status(),true);
+    c = f.get_cell(2,2);
+    QCOMPARE(c.get_status(),true);
 }
 
 QTEST_APPLESS_MAIN(TestTest)
