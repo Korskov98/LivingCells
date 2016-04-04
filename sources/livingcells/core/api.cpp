@@ -35,4 +35,3 @@ void Api::print_field(Field &f)
         std::cout<<std::endl;
     }
 }
-
