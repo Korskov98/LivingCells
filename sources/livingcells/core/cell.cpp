@@ -8,7 +8,7 @@ int Cell::check(Cell c){
     }
 }
 
-int Cell::search_living(vector<vector<Cell> > c){
+int Cell::search_living(const std::vector<std::vector<Cell> > c){
     int number = 0;
     if (x - 1 != -1){
         Cell cell = c[x-1][y];

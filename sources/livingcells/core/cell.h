@@ -2,8 +2,6 @@
 #define CELL_H
 #include <vector>
 
-using namespace std;
-
 /**
   @brief Класс Клетка
 
@@ -50,7 +48,7 @@ public:
     /**
      * @brief Подсчёт колличества соседних живых клеток
      */
-    int search_living(vector<vector<Cell> > c);
+    int search_living(const std::vector<std::vector<Cell> > c);
     int check(Cell);
 private:
     int x;

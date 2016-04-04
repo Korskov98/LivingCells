@@ -3,8 +3,6 @@
 #include "cell.h"
 #include <vector>
 
-using namespace std;
-
 /**
   @brief Класс Поле
 
@@ -52,7 +50,7 @@ public:
 private:
     int x;
     int y;
-    vector<vector<Cell> > cells;
+    std::vector<std::vector<Cell> > cells;
 };
 
 #endif // FIELD_H
