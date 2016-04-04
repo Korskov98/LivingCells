@@ -29,6 +29,7 @@ void console_ui::print_menu()
 void console_ui::secondary_menu(Field &f, Api a)
 {
     std::cout << "1. Следующее поколение." << std::endl;
+    std::cout << "2. Сохранить модель." << std::endl;
     std::cout << "0. Назад в главное меню." << std::endl;
     int choice;
     while (choice != 0) {
