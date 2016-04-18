@@ -35,3 +35,25 @@ void Api::print_field(Field &f)
         std::cout<<std::endl;
     }
 }
+
+void Api::change_field(Field &f){
+    int x = f.get_x(), y = f.get_y();
+    Field new_f(x,y);
+    new_f.set_cells(f.get_cells());
+    for (int i = 0; i < x; ++i){
+        for (int j = 0; j < y; ++j){
+            Cell c = f.get_cell(i,j);
+            int number = c.search_living(f.get_cells());
+            if ((c.get_status() == 0) && (number == 3)){
+                new_f.set_cell(i,j,1);
+            }else{
+            if ((c.get_status() == 1) && ((number == 3) || (number == 2))){
+                new_f.set_cell(i,j,1);
+            }else{
+                new_f.set_cell(i,j,0);
+            }
+            }
+        }
+    }
+    f.set_cells(new_f.get_cells());
+}

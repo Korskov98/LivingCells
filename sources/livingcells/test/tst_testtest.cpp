@@ -38,6 +38,7 @@ void TestTest::test_initialize_field()
 
 void TestTest::test_change_field(){
     Field f(3,3);
+    Api model;
     f.set_cell(0,0,1);
     f.set_cell(0,1,1);
     f.set_cell(0,2,1);
@@ -47,7 +48,7 @@ void TestTest::test_change_field(){
     f.set_cell(2,0,0);
     f.set_cell(2,1,1);
     f.set_cell(2,2,1);
-    f.change_field();
+    model.change_field(f);
     Cell c = f.get_cell(0,0);
     QCOMPARE(c.get_status(),true);
     c = f.get_cell(0,1);
