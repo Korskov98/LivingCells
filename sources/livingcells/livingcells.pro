@@ -6,4 +6,5 @@ test.depends = core
 SUBDIRS += \
     app \
     core \
-    test
+    test \
+    gui
