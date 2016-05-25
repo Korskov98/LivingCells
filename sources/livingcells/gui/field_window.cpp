@@ -23,18 +23,18 @@ field_window::field_window(QWidget *parent, Api a, Field f) : QWidget(parent)
 
 void field_window::print_field()
 {
-    for (int i = 0; i < f.get_y(); i++){
-        for (int j = 0; j < f.get_x(); j++){
+    for (int i = 0; i < f.get_x(); i++){
+        for (int j = 0; j < f.get_y(); j++){
             Cell c = f.get_cell(i,j);
             bool status = c.get_status();
             if (status == 0){
                 QPushButton* cell = new QPushButton("D",this);
                 cell->resize(CELL_SIZE);
-                cell->move(WINDOW_SIZE.width() - 450+(60*j), WINDOW_SIZE.height() - 450+(60*i));
+                cell->move(WINDOW_SIZE.width() - 450+(60*i), WINDOW_SIZE.height() - 450+(60*j));
             }else{
                 QPushButton* cell = new QPushButton("L",this);
                 cell->resize(CELL_SIZE);
-                cell->move(WINDOW_SIZE.width() - 450+(60*j), WINDOW_SIZE.height() - 450+(60*i));
+                cell->move(WINDOW_SIZE.width() - 450+(60*i), WINDOW_SIZE.height() - 450+(60*j));
             }
         }
     }
