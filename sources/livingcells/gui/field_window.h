@@ -15,7 +15,7 @@ class field_window : public QWidget
     Field f;
     const QSize WINDOW_SIZE { 660, 540 };
     const QSize BUTTON_SIZE { 200, 30 };
-    const QSize CELL_SIZE { 50, 50 };
+    const QSize CELL_SIZE { 25, 25 };
     QPushButton* next_generation_button;
     QPushButton* back_button;
 public:

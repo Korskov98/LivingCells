@@ -13,10 +13,20 @@ public:
 private Q_SLOTS:
     void test_initialize_field();
     void test_change_field();
+    void test_initialize_settings();
 };
 
 TestTest::TestTest()
 {
+}
+
+void TestTest::test_initialize_settings()
+{
+    Field f;
+    Api model;
+    model.initialize_settings(f,5,5);
+    QCOMPARE(f.get_x(),5);
+    QCOMPARE(f.get_y(),5);
 }
 
 void TestTest::test_initialize_field()

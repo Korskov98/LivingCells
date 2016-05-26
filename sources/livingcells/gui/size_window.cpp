@@ -1,7 +1,8 @@
 #include "size_window.h"
 
-size_window::size_window(QWidget* parent) : QWidget(parent)
+size_window::size_window(QWidget* parent, int mode) : QWidget(parent)
 {
+    this->mode = mode;
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Ввод размера поля");
     QPixmap background(":/4065.jpg");
@@ -9,9 +10,9 @@ size_window::size_window(QWidget* parent) : QWidget(parent)
     pal.setBrush(this->backgroundRole(), QBrush(background));
     this->setPalette(pal);
     size_field_x = create_label("Размер поля по x:", WINDOW_SIZE.width() - 480, WINDOW_SIZE.height() - 350);
-    size_Field_x = create_spin_box(1, 6, WINDOW_SIZE.width() - 200, WINDOW_SIZE.height() - 350);
+    size_Field_x = create_spin_box(1, 10, WINDOW_SIZE.width() - 200, WINDOW_SIZE.height() - 350);
     size_field_y = create_label("Размер поля по y:", WINDOW_SIZE.width() - 480, WINDOW_SIZE.height() - 300);
-    size_Field_y = create_spin_box(1, 5, WINDOW_SIZE.width() - 200, WINDOW_SIZE.height() - 300);
+    size_Field_y = create_spin_box(1, 10, WINDOW_SIZE.width() - 200, WINDOW_SIZE.height() - 300);
     next_button = new QPushButton("Далее", this);
     next_button->resize(BUTTON_SIZE);
     next_button->move(WINDOW_SIZE.width() - 400, WINDOW_SIZE.height() - 200);
@@ -25,7 +26,17 @@ size_window::size_window(QWidget* parent) : QWidget(parent)
 void size_window::print_field()
 {
     a.initialize_settings(f,size_Field_x->value(),size_Field_y->value());
-    a.initialize_field(f);
+    if (mode == 1){
+        a.initialize_field(f);
+    }else{
+        for (int i = 0; i < f.get_x(); i++){
+            for (int j = 0; j < f.get_y(); j++){
+                initialize_window* init = new initialize_window(this, &a, &f, i, j);
+                init->exec();
+                delete init;
+            }
+        }
+    }
     field_window* field = new field_window(0,a,f);
     field->show();
     this->close();
