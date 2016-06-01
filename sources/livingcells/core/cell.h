@@ -35,20 +35,28 @@ public:
     bool get_status() {return status;}
     /**
      * @brief Установить значение поля x, равное координате по оси x
+     * @param a координата по оси x
      */
     void set_x(const int a) {x = a;}
     /**
      * @brief Установить значение поля y, равное координате по оси y
+     * @param b координата по оси y
      */
     void set_y(const int b) {y = b;}
     /**
      * @brief Установить значение поля status, равное состоянию клетки
+     * @param st статус клетки
      */
     void set_status(const bool st) {status = st;}
     /**
      * @brief Подсчёт колличества соседних живых клеток
+     * @param c двумерный массив клеток
      */
     int search_living(const std::vector<std::vector<Cell> > c);
+    /**
+     * @brief Проверка состояние клетки
+     * @param проверяемая клетка
+     */
     int check(Cell);
 private:
     int x;

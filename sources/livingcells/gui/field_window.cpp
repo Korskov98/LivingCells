@@ -15,6 +15,10 @@ field_window::field_window(QWidget *parent, Api a, Field f) : QWidget(parent)
     next_generation_button->resize(BUTTON_SIZE);
     next_generation_button->move(WINDOW_SIZE.width() - 650, WINDOW_SIZE.height() - 50);
     connect(next_generation_button, SIGNAL(clicked()), SLOT(next_generation()));
+    save_button = new QPushButton("Сохранить модель", this);
+    save_button->resize(BUTTON_SIZE);
+    save_button->move(WINDOW_SIZE.width() - 430, WINDOW_SIZE.height() - 50);
+    connect(save_button, SIGNAL(clicked()), SLOT(save_field()));
     back_button = new QPushButton("Назад в главное меню", this);
     back_button->resize(BUTTON_SIZE);
     back_button->move(WINDOW_SIZE.width() - 210, WINDOW_SIZE.height() - 50);
@@ -55,5 +59,10 @@ void field_window::back_in_main_menu()
     MainWindow* w = new MainWindow(0);
     w->show();
     this->close();
+}
+
+void field_window::save_field()
+{
+    a.save_field(f);
 }
 

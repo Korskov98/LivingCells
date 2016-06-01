@@ -34,19 +34,38 @@ public:
      */
     int get_y() {return y;}
     /**
-     * @brief Установить значение поля x, равное размеру поля по оси x
+     * @brief Получить клетку из поля
+     * @param x_cell координата клетки по x
+     * @param y_cell координата клетки по y
+     * @return клетки из поля
      */
     Cell get_cell(const int x_cell, const int y_cell) {return cells[x_cell][y_cell];}
+    /**
+     * @brief Получить все клетки поля
+     * @return двумерный массив клеток
+     */
     std::vector<std::vector<Cell> > get_cells() {return cells;}
+    /**
+     * @brief Установить значение поля x, равное размеру поля по оси x
+     * @param a размер поля по оси x
+     */
     void set_x(const int a);
     /**
      * @brief Установить значение поля y, равное размеру поля по оси y
+     * @param b размер поля по оси y
      */
     void set_y(const int b);
     /**
-     * @brief Запускает механизм смены поколения и изменения клеток
+     * @brief Задать данные новой клетки
+     * @param x_cell координата клетки по x
+     * @param y_cell координата клетки по y
+     * @param status состояние клетки
      */
     void set_cell(const int x_cell, const int y_cell, const int status);
+    /**
+     * @brief Задать массив клеток
+     * @param c двумерный массив клеток
+     */
     void set_cells(const std::vector<std::vector<Cell> > c) {cells = c;}
 private:
     int x;

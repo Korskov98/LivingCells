@@ -18,12 +18,14 @@ class field_window : public QWidget
     const QSize CELL_SIZE { 25, 25 };
     QPushButton* next_generation_button;
     QPushButton* back_button;
+    QPushButton* save_button;
 public:
     field_window(QWidget* parent,Api a,Field f);
     void print_field();
 private slots:
     void next_generation();
     void back_in_main_menu();
+    void save_field();
 };
 
 #endif // FIELD_WINDOW_H

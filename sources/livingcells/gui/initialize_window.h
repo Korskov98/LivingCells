@@ -17,7 +17,7 @@ class initialize_window : public QDialog
     Field* f;
     int x;
     int y;
-    const QSize WINDOW_SIZE { 330, 220 };
+    const QSize WINDOW_SIZE { 430, 220 };
     const QSize BUTTON_SIZE { 200, 30 };
     QLabel* status_cell;
     QPushButton* live_button;

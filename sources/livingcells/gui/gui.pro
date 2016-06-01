@@ -17,13 +17,15 @@ SOURCES += main.cpp\
     exit_window.cpp \
     size_window.cpp \
     field_window.cpp \
-    initialize_window.cpp
+    initialize_window.cpp \
+    figure_window.cpp
 
 HEADERS  += mainwindow.h \
     exit_window.h \
     size_window.h \
     field_window.h \
-    initialize_window.h
+    initialize_window.h \
+    figure_window.h
 
 RESOURCES += \
     background/sources.qrc
