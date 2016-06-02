@@ -6,9 +6,8 @@ field_window::field_window(QWidget *parent, Api a, Field f) : QWidget(parent)
     this->f = f;
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Поле");
-    QPixmap background(":/4065.jpg");
     QPalette pal;
-    pal.setBrush(this->backgroundRole(), QBrush(background));
+    pal.setColor(QPalette::Background, QColor(0, 200, 100, 255));
     this->setPalette(pal);
     this->print_field();
     next_generation_button = new QPushButton("Следующее поколение", this);

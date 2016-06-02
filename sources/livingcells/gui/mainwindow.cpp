@@ -5,9 +5,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Жизнь");
-    QPixmap background(":4065.jpg");
     QPalette pal;
-    pal.setBrush(this->backgroundRole(), QBrush(background));
+    pal.setColor(QPalette::Background, QColor(0, 200, 100, 255));
     this->setPalette(pal);
     new_random_model_button = new QPushButton("Создать новую случайную модель", this);
     new_random_model_button->resize(BUTTON_SIZE);

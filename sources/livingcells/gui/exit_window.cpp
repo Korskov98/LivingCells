@@ -5,9 +5,8 @@ exit_window::exit_window(QWidget* parent) : QDialog(parent)
     this->parent = parent;
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Подтверждение выхода");
-    QPixmap background(":/4065.jpg");
     QPalette pal;
-    pal.setBrush(this->backgroundRole(), QBrush(background));
+    pal.setColor(QPalette::Background, QColor(0, 200, 100, 255));
     this->setPalette(pal);
     exit_label =  new QLabel(this);
     exit_label->move(WINDOW_SIZE.width() - 283, WINDOW_SIZE.height()  - 80);

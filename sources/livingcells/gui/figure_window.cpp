@@ -5,9 +5,8 @@ figure_window::figure_window(QWidget* parent) : QDialog(parent)
     this->parent = parent;
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Выбор фигуры");
-    QPixmap background(":/4065.jpg");
     QPalette pal;
-    pal.setBrush(this->backgroundRole(), QBrush(background));
+    pal.setColor(QPalette::Background, QColor(0, 200, 100, 255));
     this->setPalette(pal);
     figure_label =  new QLabel(this);
     figure_label->move(WINDOW_SIZE.width() - 283, WINDOW_SIZE.height()  - 380);

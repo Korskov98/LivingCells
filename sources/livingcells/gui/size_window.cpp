@@ -5,9 +5,8 @@ size_window::size_window(QWidget* parent, int mode) : QWidget(parent)
     this->mode = mode;
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Ввод размера поля");
-    QPixmap background(":/4065.jpg");
     QPalette pal;
-    pal.setBrush(this->backgroundRole(), QBrush(background));
+    pal.setColor(QPalette::Background, QColor(0, 200, 100, 255));
     this->setPalette(pal);
     size_field_x = create_label("Размер поля по x:", WINDOW_SIZE.width() - 480, WINDOW_SIZE.height() - 350);
     size_Field_x = create_spin_box(1, 10, WINDOW_SIZE.width() - 200, WINDOW_SIZE.height() - 350);

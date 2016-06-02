@@ -9,9 +9,8 @@ initialize_window::initialize_window(QWidget *parent, Api *a, Field *f, int i, i
     this->y = j;
     this->setFixedSize(WINDOW_SIZE);
     this->setWindowTitle("Выбор состояния клетки");
-    QPixmap background(":/4065.jpg");
     QPalette pal;
-    pal.setBrush(this->backgroundRole(), QBrush(background));
+    pal.setColor(QPalette::Background, QColor(0, 200, 100, 255));
     this->setPalette(pal);
     status_cell =  new QLabel(this);
     status_cell->move(WINDOW_SIZE.width() - 385, WINDOW_SIZE.height()  - 160);
